@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField] private float _moveSpeed = 1.0f;
-    [SerializeField] private float _turnSpeed = 1.0f;
+    [SerializeField] private float _moveSpeed = 15.0f;
+    [SerializeField] private float _turnSpeed = 100.0f;
     [SerializeField] private Animator _animator;
 
     private string _isWalkingName = "IsWalking";
