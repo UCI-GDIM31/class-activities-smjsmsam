@@ -10,6 +10,8 @@ _bounce is a counter, so its values will only update incrementally. Floats are n
 
 Step 4 did not have a semcolon and thus the compiler made a red squiggly underline with "; expected".
 
+### W3
+
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
