@@ -11,6 +11,12 @@ _bounce is a counter, so its values will only update incrementally. Floats are n
 Step 4 did not have a semcolon and thus the compiler made a red squiggly underline with "; expected".
 
 ### W3
+Table #2
+
+bool DidPlayerHitBeat(float hit_time){};
+Assuming that the class contains the expected float for beat time as a member variable.
+
+Classes are categories and components are the items of that category. For example, a class would be animal, and components would be zebra, dog, cat, etc.
 
 ## Open-Source Assets
 ### W1
