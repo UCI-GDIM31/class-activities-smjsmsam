@@ -18,6 +18,14 @@ Assuming that the class contains the expected float for beat time as a member va
 
 Classes are categories and components are the items of that category. For example, a class would be animal, and components would be zebra, dog, cat, etc.
 
+### W4
+
+5: create private variable for jump force and set to 1
+
+22: calculate translation for z axis based on current position, how fast the object moves, and how much time has passed
+
+25: apply translation
+
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
