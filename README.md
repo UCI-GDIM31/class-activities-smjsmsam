@@ -27,6 +27,10 @@ Table #2
 
 25: apply translation to Cat's transform component
 
+Table #2
+
+The Cat and SoccerBall objects have Rigidbodies because they need to simulate physics (jumping, kicking, etc). For IsTrigger, 
+
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
