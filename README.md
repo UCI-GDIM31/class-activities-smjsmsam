@@ -19,12 +19,13 @@ Assuming that the class contains the expected float for beat time as a member va
 Classes are categories and components are the items of that category. For example, a class would be animal, and components would be zebra, dog, cat, etc.
 
 ### W4
+Table #2
 
-5: create private variable for jump force and set to 1
+5: create private float variable for jump force and set to 1
 
-22: calculate translation for z axis based on current position, how fast the object moves, and how much time has passed
+22: calculate translation for z axis based on current position (using .GetAxis), how fast the object moves (_moveSpeed), and how much time has passed (Time.deltaTime)
 
-25: apply translation
+25: apply translation to Cat's transform component
 
 ## Open-Source Assets
 ### W1
