@@ -8,6 +8,9 @@ public class SoccerBall : MonoBehaviour
     [SerializeField] private TMP_Text _timeText;
     [SerializeField] private ParticleSystem _goalVFX;
 
+    private int _points = 0;
+    private float _timeSinceGoal;
+
     // STEP 1 -----------------------------------------------------------------
     // The OnTriggerEnter method is a collision method called by Unity that
     //      tells our object when it's hit a collider with Is Trigger checked.
@@ -33,9 +36,9 @@ public class SoccerBall : MonoBehaviour
         // Then, move your Debug.Log() statement so that it's only called if
         //      the colliding object has the "Goal" tag.
 
-        if(collider.tag == "Goal")
+        if (collider.tag == "Goal")
         {
-            Debug.Log("SoccerBall detected a collision with a trigger collider!");
+            MadeGoal();
         }
 
 
@@ -53,7 +56,10 @@ public class SoccerBall : MonoBehaviour
     // Once you've created MadeGoal,
     //      move your Debug.Log() statement into MadeGoal, and
     //      call MadeGoal from inside your if statement in OnTriggerEnter.
-    
+    private void MadeGoal()
+    {
+        Debug.Log("SoccerBall detected a collision with a trigger collider!");
+
         // STEP 4 -------------------------------------------------------------
         // _goalVFX is a ParticleSystem, a Component for creating VFX.
         // ParticleSystem has a method named Play() that displays the VFX:
@@ -61,9 +67,14 @@ public class SoccerBall : MonoBehaviour
         //
         // Call Play on _goalVFX.
 
+        _goalVFX.Play();
+        _points++;
+        _pointsText.text = "points: " + _points;
+        _timeSinceGoal = 0;
+
         // STEP 4 -------------------------------------------------------------
-    
-    
+
+    }
     // STEP 3 -----------------------------------------------------------------
 
 
@@ -82,7 +93,7 @@ public class SoccerBall : MonoBehaviour
     //      2. Use your MadeGoal method to update the points and text.
     //
     // STEP 5 -----------------------------------------------------------------
-    
+
 
     // STEP 6 -----------------------------------------------------------------
     // Like the last step, these flags do NOT show you where to put all of the
@@ -99,4 +110,10 @@ public class SoccerBall : MonoBehaviour
     //      2. Use the MadeGoal method to reset your
     //              time variable when the player makes a goal. 
     // STEP 6 -----------------------------------------------------------------
+
+    private void Update()
+    {
+        _timeSinceGoal += Time.deltaTime;
+        _timeText.text = "time since last goal: " + _timeSinceGoal;
+    }
 }
