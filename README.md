@@ -29,7 +29,12 @@ Table #2
 
 Table #2
 
-The Cat and SoccerBall objects have Rigidbodies because they need to simulate physics (jumping, kicking, etc). For IsTrigger, 
+The Cat and SoccerBall objects have Rigidbodies because they need to simulate physics (jumping, kicking, etc). For IsTrigger, SoccerBall should have it because it needs to be detected when it interacts with other game objects.
+
+### W5
+
+Which Update() gets called first?
+Ordering of Update() is random but they will run in same frame so the difference is miniscule (multiple frames per second)
 
 ## Open-Source Assets
 ### W1
