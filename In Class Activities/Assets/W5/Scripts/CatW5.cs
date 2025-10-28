@@ -42,10 +42,22 @@ public class CatW5 : MonoBehaviour
         //      them forwards.
         //
         // MULTIPLY one of your vectors with a certain value to do this. >:)
+        
+        KeyCode forwards = _flipWSControls ? KeyCode.S : KeyCode.W;
+        KeyCode backwards = _flipWSControls ? KeyCode.W : KeyCode.S;
 
         Vector3 translation = Vector3.zero;
-        
 
+        if (Input.GetKey(forwards))
+        {
+            translation = Vector3.forward;
+        }
+        else if (Input.GetKey(backwards))
+        {
+            translation = Vector3.back;
+        }
+
+        gameObject.GetComponent<Transform>().Translate(translation * _moveSpeed * Time.deltaTime);
 
         // STEP 1 & 2 ---------------------------------------------------------
 
