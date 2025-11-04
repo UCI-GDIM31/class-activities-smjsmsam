@@ -36,6 +36,7 @@ Which Update() gets called first?
 Ordering of Update() is random but they will run in same frame so the difference is miniscule (multiple frames per second).
 
 ### W6
+General C#
 [Course Review & Resources Doc](https://docs.google.com/document/d/1g257orHX8bQNaC57k1DMqCDIpAd95jDwpQPqJiA4ks8/edit?usp=sharing)
 
 Member variables:
