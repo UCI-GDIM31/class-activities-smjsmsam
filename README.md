@@ -48,6 +48,12 @@ Methods:
 * update to check for boolean and move accordingly
 * setters for chasing
 
+### W7
+[Game Idea & Outline Doc](https://docs.google.com/document/d/1G_ZSCA2-UVtHll1uaPGUIZ9OZg3-oBIxvR5bJl7Vl6k/edit?usp=sharing)
+Role: gameplay
+
+Step 2 incorrectly transformed the object in global space rather than object space.
+
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
